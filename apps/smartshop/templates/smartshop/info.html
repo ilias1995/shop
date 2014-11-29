@@ -1,0 +1,12 @@
+{% extends "smartshop/base.html" %}
+
+{% block content %} 
+ 
+<div class="infobody">
+		<img src="{{ product.photos.url }}" width="300" height="200" class="infoimg img-thumbnail">      
+        <h3>Для: {{ product.name_pro }}</h3>
+        <h3>{{ product.price }}</h3>
+        <p>{{ product.about }}</p>
+</div>
+
+{% endblock %}
